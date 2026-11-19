@@ -1,0 +1,12 @@
+CREATE INDEX idx_man_l_orderkey ON lineitem(l_orderkey);
+CREATE INDEX idx_man_l_partkey  ON lineitem(l_partkey);
+CREATE INDEX idx_man_l_suppkey  ON lineitem(l_suppkey);
+CREATE INDEX idx_man_l_shipdate ON lineitem(l_shipdate);
+CREATE INDEX idx_man_o_custkey  ON orders(o_custkey);
+CREATE INDEX idx_man_o_orderdate ON orders(o_orderdate);
+CREATE INDEX idx_man_c_nationkey ON customer(c_nationkey);
+CREATE INDEX idx_man_s_nationkey ON supplier(s_nationkey);
+CREATE INDEX idx_man_ps_partkey ON partsupp(ps_partkey);
+CREATE INDEX idx_man_ps_suppkey ON partsupp(ps_suppkey);
+CREATE INDEX idx_man_n_regionkey ON nation(n_regionkey);
+ANALYZE;
